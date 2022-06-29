@@ -65,9 +65,13 @@ header{
 }
 
 .center-apresentation{
-    padding : 8%;
+    padding : 32px 0 0 16%; /* superior | direita | inferior | esquerda*/
 }
 
-.apresentation-name{
-    font-size: 14px;
+.last-publications-title h2{
+    font-size: 20px;
+}
+
+.publications {
+    display: flex;
 }
