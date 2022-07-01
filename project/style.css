@@ -6,10 +6,11 @@
 }
 
 .center{
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
+    background-color: whitesmoke;
 }
 
 header{
@@ -28,8 +29,8 @@ header{
 }
 
 .menu{
-    width:80%;
-    text-align: right;
+    width:100%;
+    text-align: center;
 }
 
 .menu a{
@@ -59,19 +60,58 @@ header{
 }
 
 .apresentation{
-    max-width: 1100px;
+    max-width: 900 px;
     width:80%;
     padding: 72px 0;
 }
 
 .center-apresentation{
-    padding : 32px 0 0 16%; /* superior | direita | inferior | esquerda*/
+    padding-top: 26px; /* superior | direita | inferior | esquerda*/
 }
 
 .last-publications-title h2{
     font-size: 20px;
+    padding-bottom: 12px;
 }
 
 .publications {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.publications-single{
+    background-color: white;
+    width: 19%;
+    margin-right: 1%;
+}
+
+.publications-single a{
+    color: #124265;
+    font-weight: bolder;
+    font-size: 10px;
+    display: flex;
+}
+
+.publications-single img{
+    width: 80%;
+    padding: 10px;
+    margin: 0px auto;
+    display: block;
+}
+
+.btn-publication{
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-publication:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .publications-single{
+        width: 100%;
+    }
 }
